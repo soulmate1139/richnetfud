@@ -9,26 +9,61 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
-    <style>
-        .swal-footer{
-            text-align: center !important;
-        }
-        .swal-button-container {
-            float: none !important;
-        }
-        .swal-button {
-            background-color: green;
-        }
-    </style>
+
     <script>
-        swal({
-            title: "Your documents have been successfully uploaded!",
-            text: "Your request is being reviewed and you should recieve an email reply within 48 hours",
-            icon: "success",
-            button: "OKAY",
-        }).then(function() {
-            window.location = "../Cryptenion_dashboard.html";
-        });
+        let amount = document.getElementById("withdrawAmountTxt").value;
+            let address = document.getElementById("wallet_address").value;
+            
+            if((amount !== "") && (address !== "")){
+                var mesgTitle = user_data.withdrawMsg[0]
+                var mesg = user_data.withdrawMsg[1];
+                var mesgType = user_data.withdrawMsg[2];
+                //swal( "mesgTitle", "mesg", "error");
+                
+                // UPDATE THE BALANCE HERE
+                //var withdrawAmt = document.getElementById("withdrawAmountTxt").innerText;
+                
+                if(mesgType == "success"){
+                    swal({
+                        title: mesgTitle,
+                        text: mesg,
+                        icon: "success",
+                        button: "OKAY",
+                    }).then(function() {
+                        window.location = "Cryptenion_withdraw.html";
+                    });
+                    //document.getElementById("currency_bal").innerHTML = "$ 27,850";
+                    //user_data.current_bal = withdrawAmt;
+                } else if(mesgType == "info"){
+                    swal({
+                        title: mesgTitle,
+                        text: mesg,
+                        icon: "info",
+                    }).then(function() {
+                        window.location = "Cryptenion_withdraw.html";
+                    });
+                } else {
+                    swal({
+                        title: mesgTitle,
+                        text: mesg,
+                        icon: "error",
+                    }).then(function() {
+                        window.location = "Cryptenion_withdraw.html";
+                    });
+                }
+
+                // document.getElementById("email").value = user_data.email;
+                // document.getElementById("withdraw_form").submit();
+            } else{
+                swal({
+                    title: "Sorry!",
+                    text: "You need to fill all required fields",
+                    icon: "error",
+                    button: "OKAY",
+                }, function() {
+                        window.location = "Cryptenion_withdraw.html";
+                });
+            }
         </script>
       
         <style>
