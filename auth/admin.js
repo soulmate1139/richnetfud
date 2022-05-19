@@ -73,7 +73,7 @@ function admin_control() {
              transaction_history : [],
             // eth_wallet : "eth wallet",
             transaction_history : get_transaction_hist,
-            //verify_status : "verified"
+            //verify_status : "not_verified"
       }
       
     // Push to Firebase Database
