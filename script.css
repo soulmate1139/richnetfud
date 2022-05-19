@@ -1,0 +1,37 @@
+@media screen and (max-width: 480px) {
+  .show_for_window {
+    display: none !important;
+  }
+  .show_for_mobile {
+    display: block !important;
+  }
+  .img_for_mobile {
+    width: 100%;
+  }
+
+  .bodycontainer a {
+    width: 100%;
+  }
+
+  .bodycontainer h1 {
+    text-align: center;
+  }
+  .bodycontainer .col-6 img {
+    width: 100%;
+  }
+  .video-lightbox {
+    display: none;
+  }
+}
+
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+section .customer-feedback {
+  width: 100%;
+}
+.customer-feedback .row {
+  margin-right: -15px !important;
+  margin-left: -15px !important;
+}
