@@ -11,6 +11,9 @@
 <body>
 
     <script>
+        var user_data = JSON.parse(localStorage.getItem("user_details_holder"))
+
+
                 var mesgTitle = user_data.withdrawMsg[0]
                 var mesg = user_data.withdrawMsg[1];
                 var mesgType = user_data.withdrawMsg[2];
