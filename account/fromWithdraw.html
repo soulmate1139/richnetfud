@@ -11,10 +11,6 @@
 <body>
 
     <script>
-        let amount = document.getElementById("withdrawAmountTxt").value;
-            let address = document.getElementById("wallet_address").value;
-            
-            if((amount !== "") && (address !== "")){
                 var mesgTitle = user_data.withdrawMsg[0]
                 var mesg = user_data.withdrawMsg[1];
                 var mesgType = user_data.withdrawMsg[2];
@@ -52,29 +48,7 @@
                     });
                 }
 
-                // document.getElementById("email").value = user_data.email;
-                // document.getElementById("withdraw_form").submit();
-            } else{
-                swal({
-                    title: "Sorry!",
-                    text: "You need to fill all required fields",
-                    icon: "error",
-                    button: "OKAY",
-                }, function() {
-                        window.location = "Cryptenion_withdraw.html";
-                });
-            }
         </script>
-      
-        <style>
-            .swal-footer{
-                overflow: auto;
-            }
-
-            .swal-button-container{
-                float: right;
-            }
-
-        </style>
+    
 </body>
 </html>
