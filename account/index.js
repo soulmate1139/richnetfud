@@ -277,9 +277,7 @@ function reload_data(){
         const auth = firebase.auth()
         const database = firebase.database()
 
-
-
-
+        
         var user_details_holder;
         // Get all our input fields
         email = user_data.email
