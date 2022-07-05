@@ -169,13 +169,13 @@ function exchange_handleCoinFrom(coinFrom) {
 }
 
 function checkIfLoggedIn(){
-    if(user_data == null){
+    if(user_data == ""){
         window.location.href = "../auth/signIn.html";
     }
 }
 
 function logOut(){
-    localStorage.setItem("user_details_holder", null);
+    localStorage.setItem("user_details_holder", "");
     window.location.href = "../auth/signIn.html";
 }
 
