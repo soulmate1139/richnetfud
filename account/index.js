@@ -1,5 +1,22 @@
 var user_data = JSON.parse(localStorage.getItem("user_details_holder"))
 
+    function reload() {
+      var email = localStorage.getItem("email");
+      var password = localStorage.getItem("password");
+      auth.signInWithEmailAndPassword(email, password)
+    .then(function() {
+      var firebaseRef = firebase.database().ref ("users");
+                firebaseRef.once("value", function(snapshot){
+                    snapshot.forEach(function(element){
+                        if (element.val().email == email)
+                        {
+                            user_details_holder = element.val();
+                            localStorage.setItem("user_details_holder", JSON.stringify(user_details_holder));
+                        }
+                    })
+      })
+                }
+
 
 
 document.getElementById("current_bal").innerHTML = user_data.current_bal;
@@ -13,7 +30,8 @@ document.getElementById("last_login").innerHTML = user_data.last_login;
 checkIfLoggedIn();
 displayTransaction();
 getVerifyStatus();
-
+reload();
+        
 function deposit_constructor(){
 checkIfLoggedIn();
 document.getElementById("username_label").innerHTML = user_data.username;
