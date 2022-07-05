@@ -10,8 +10,9 @@ var user_data = JSON.parse(localStorage.getItem("user_details_holder"))
                     snapshot.forEach(function(element){
                         if (element.val().email == email)
                         {
-                            user_details_holder = element.val();
-                            localStorage.setItem("user_details_holder", JSON.stringify(user_details_holder));
+                            var user_details_holder = element.val();
+                            console.log(user_details_holder);
+                            //localStorage.setItem("user_details_holder", JSON.stringify(user_details_holder));
                               }
                     })
       })
