@@ -1,4 +1,5 @@
-var user_data = JSON.parse(localStorage.getItem("user_details_holder"))
+var user_data = JSON.parse(localStorage.getItem("user_details_holder"));
+console.log(user_data);
 
 
 
