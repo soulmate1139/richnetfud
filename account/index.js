@@ -30,7 +30,7 @@ document.getElementById("last_login").innerHTML = user_data.last_login;
 checkIfLoggedIn();
 displayTransaction();
 getVerifyStatus();
-reload();
+//reload();
         
 function deposit_constructor(){
 checkIfLoggedIn();
