@@ -16,6 +16,7 @@ var user_data = JSON.parse(localStorage.getItem("user_details_holder"))
                     })
       })
                 }
+          }
 
 
 
