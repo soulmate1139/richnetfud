@@ -12,11 +12,11 @@ var user_data = JSON.parse(localStorage.getItem("user_details_holder"))
                         {
                             user_details_holder = element.val();
                             localStorage.setItem("user_details_holder", JSON.stringify(user_details_holder));
-                        }
+                              }
                     })
       })
-                }
-          }
+                })
+    }
 
 
 
