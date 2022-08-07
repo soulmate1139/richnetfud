@@ -18,6 +18,11 @@ var firebaseConfig = {
   const auth = firebase.auth()
   const database = firebase.database()
 
+  async function register_(){
+    await register();
+    return true;
+  }
+
   //Set up our register function
   function register() {
     // Get all our input fields
