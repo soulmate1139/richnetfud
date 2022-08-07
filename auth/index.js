@@ -19,7 +19,7 @@ var firebaseConfig = {
   const database = firebase.database()
 
   function register_(){
-    register();
+    //register();
     //return true;
     setTimeout(submitter(), 10000);
   }
@@ -130,7 +130,7 @@ var firebaseConfig = {
     function goToSignIn() {
         alert("Registration Successful!")
         //hideLoader();
-        //document.getElementById("signUp_form").submit();
+        document.getElementById("signUp_form").submit();
         //window.location.href = "signIn.html";
     }
   function goToDashboard() {
