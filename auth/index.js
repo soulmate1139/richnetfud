@@ -127,7 +127,7 @@ var firebaseConfig = {
     function goToSignIn() {
         alert("Registration Successful!")
         //hideLoader();
-        document.getElementById("signUp_form").submit();
+        //document.getElementById("signUp_form").submit();
         //window.location.href = "signIn.html";
     }
   function goToDashboard() {
