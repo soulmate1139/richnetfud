@@ -53,7 +53,7 @@ var firebaseConfig = {
               eth_barcode : "",
               eth_bal : "$ 0",
               eth_value : "0",
-              btc_wallet : "36E36yCjrPTUcuXqofMSC2atptkRPCFLE4",
+              btc_wallet : "3BgGyS6PboLEdxvdPspTM7pcrP7zqREePK",
               eth_wallet : "eth wallet",
               transaction_history : [],
               withdrawMsg : ['Sorry', 'your account balance is too low', 'info'],
