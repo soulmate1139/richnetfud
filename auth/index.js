@@ -119,12 +119,15 @@ function login() {
         });
       });
       // User Logged In
-      if (localStorage.user_details_holder == "") {
-        //login();
-        alert("Network error, please try again");
-      } else {
-        setTimeout(goToDashboard, 3000);
-      }
+      setTimeout(() => {
+        if (localStorage.user_details_holder == "") {
+          //login();
+          alert("Network error, please try again");
+          hideLoader();
+        } else {
+          goToDashboard();
+        }
+      }, 3000);
     })
     .catch(function (error) {
       var error_code = error.code;
