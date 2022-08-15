@@ -1548,7 +1548,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>cryptoearn | Sign In</title>
+    <title>Reachnetfunds | Sign In</title>
 
     <link
       rel="shortcut icon"
@@ -1641,21 +1641,22 @@
         }
       }
     </style>
+    <link type="text/css" rel="stylesheet" href="error/css/style.css" />
   </head>
   <body>
     <div
       id="loader"
-      style="
-        display: none;
-        position: absolute;
-        width: 100%;
-        text-align: center;
-        background-color: white;
-        height: 100vh;
-        top: 0;
-      "
+      class="outer"
+      style="display: none; background-color: white; height: 100vh; width: 100%"
     >
-      <img style="width: 100%" src="../loading.gif" alt="" />
+      <div class="center">
+        <img
+          class="box"
+          style="width: 100%; border: none; height: fit-content"
+          src="../loading.gif"
+          alt=""
+        />
+      </div>
     </div>
     <div id="app">
       <div class="main-wrapper">
@@ -1678,7 +1679,7 @@
                     class="text-muted font-weight-normal mb-4"
                     style="margin-left: 3px"
                   >
-                    Welcome to Cryptoearn
+                    Welcome to Reachnetfunds
                   </h6>
                   <div>
                     <input
