@@ -1,3 +1,8 @@
+showLoader();
+window.onload = (event) => {
+  hideLoader();
+};
+
 var firebaseConfig = {
   apiKey: "AIzaSyB5KeklDZE4GMt_mu2OPgLiGmfviSAJgI4",
   authDomain: "crytoearn-aac54.firebaseapp.com",
@@ -127,7 +132,7 @@ function login() {
         } else {
           goToDashboard();
         }
-      }, 3000);
+      }, 4000);
     })
     .catch(function (error) {
       var error_code = error.code;
