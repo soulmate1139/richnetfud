@@ -120,7 +120,8 @@ function login() {
       });
       // User Logged In
       if (localStorage.user_details_holder == "") {
-        login();
+        //login();
+        alert("Network error, please try again");
       } else {
         setTimeout(goToDashboard, 3000);
       }
