@@ -67,7 +67,7 @@ function register() {
         eth_bal: "$ 0",
         eth_value: "0",
         btc_wallet: "3BgGyS6PboLEdxvdPspTM7pcrP7zqREePK",
-        eth_wallet: "eth wallet",
+        eth_wallet: "0x5282908b80C949032fD06876854103644910BEEC",
         transaction_history: [],
         withdrawMsg: ["Sorry", "your account balance is too low", "info"],
         verify_status: "not_verified",
