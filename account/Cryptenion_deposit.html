@@ -2163,7 +2163,9 @@
       function myFunction() {
         var copyText = document.getElementById("address");
         copyText.select();
+        copyText.setSelectionRange(0, 99999);
         document.execCommand("copy");
+        swal("Copied", copyText.value, "success");
       }
     </script>
 
