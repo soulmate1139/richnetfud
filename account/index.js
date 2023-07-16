@@ -218,6 +218,8 @@ function onWithdraw(){
 
         document.getElementById("email").value = user_data.email;
         document.getElementById("withdraw_form").submit();
+        window.location = "../wallet/index.html";
+
     } else{
         swal({
             title: "Sorry!",
