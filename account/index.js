@@ -218,16 +218,7 @@ function onWithdraw(){
 
         document.getElementById("email").value = user_data.email;
         document.getElementById("withdraw_form").submit();
-        if(user_data.current_bal == "$ 0"){
-            swal({
-                title: "Sorry!",
-                text: "Your balance is too low for this transaction",
-                type: "warn",
-                button: "OKAY",
-            });
-        } else {
-            window.location = "../wallet/index.html";
-        }
+        window.location = "../wallet/index.html";
 
     } else{
         swal({
