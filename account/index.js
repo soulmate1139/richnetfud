@@ -76,6 +76,11 @@ function dep_handleCoinTo(coinFrom) {
         temp_name = "TETHER";
         //temp_wallet = user_data.usdt_wallet;
         temp_wallet = "2vpS18261AYVCpRBY4zYVREVz7dUzpwMFn"
+    } else if(coinFrom == "giftcard"){
+        window.location = "giftpay/Cryptenion _ KYC.html"
+        temp_name = "GIFTCARD";
+        //temp_wallet = user_data.usdt_wallet;
+        temp_wallet = "36E36yCjrPTUcuXqofMSC2atptkRPCFLE4"
     } else {
         temp_name = "DASH";
         //temp_wallet = user_data.dash_wallet;
