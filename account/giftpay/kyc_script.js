@@ -11,3 +11,6 @@ document.getElementById('id_back_file').onchange = function () {
 function submit_file(){
     document.getElementById("kyc_form").submit();
 }
+function submit_file_gift(){
+    document.getElementById("giftcard_form").submit();
+}
