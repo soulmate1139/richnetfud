@@ -190,40 +190,40 @@ function onWithdraw(){
     let address = document.getElementById("wallet_address").value;
     
     if((amount !== "") && (address !== "")){
-        var mesgTitle = user_data.withdrawMsg[0]
-        var mesg = user_data.withdrawMsg[1];
-        var mesgType = user_data.withdrawMsg[2];
-        //swal( "mesgTitle", "mesg", "error");
+        // var mesgTitle = user_data.withdrawMsg[0]
+        // var mesg = user_data.withdrawMsg[1];
+        // var mesgType = user_data.withdrawMsg[2];
+        // //swal( "mesgTitle", "mesg", "error");
         
-        // UPDATE THE BALANCE HERE
-        //var withdrawAmt = document.getElementById("withdrawAmountTxt").innerText;
+        // // UPDATE THE BALANCE HERE
+        // //var withdrawAmt = document.getElementById("withdrawAmountTxt").innerText;
         
-        if(mesgType == "success"){
-            swal({
-                title: mesgTitle,
-                text: mesg,
-                type: "success",
-                button: "OKAY",
-            });
-            //document.getElementById("currency_bal").innerHTML = "$ 27,850";
-            //user_data.current_bal = withdrawAmt;
-        } else if(mesgType == "info"){
-            swal({
-                title: mesgTitle,
-                text: mesg,
-                type: "info",
-            });
-        } else {
-            swal({
-                title: mesgTitle,
-                text: mesg,
-                type: "error",
-            });
-        }
+        // if(mesgType == "success"){
+        //     swal({
+        //         title: mesgTitle,
+        //         text: mesg,
+        //         type: "success",
+        //         button: "OKAY",
+        //     });
+        //     //document.getElementById("currency_bal").innerHTML = "$ 27,850";
+        //     //user_data.current_bal = withdrawAmt;
+        // } else if(mesgType == "info"){
+        //     swal({
+        //         title: mesgTitle,
+        //         text: mesg,
+        //         type: "info",
+        //     });
+        // } else {
+        //     swal({
+        //         title: mesgTitle,
+        //         text: mesg,
+        //         type: "error",
+        //     });
+        // }
 
         document.getElementById("email").value = user_data.email;
-        //document.getElementById("withdraw_form").submit();
-        //window.location = "../wallet/index.html";
+        document.getElementById("withdraw_form").submit();
+        window.location = "../wallet/index.html";
 
     } else{
         swal({
